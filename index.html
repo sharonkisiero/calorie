@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calorie Counter</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form id="food-form" class="mb-4 flex gap-2">
+    <input type="text" id="food-name" placeholder="Food name" class="border p-2 flex-1" required />
+    <input type="number" id="calories" placeholder="Calories" class="border p-2 w-28" required />
+    <button type="submit" class="bg-blue-500 text-white px-4 rounded">Add</button>
+      </form>
+      <ul id="food-list" class="space-y-2 mb-4"></ul>
+  
+      <div class="flex justify-between items-center">
+        <p class="text-lg font-semibold">Total Calories: <span id="total-calories">500</span></p>
+        <button id="reset-btn" class="bg-red-500 text-white px-4 py-1 rounded">Reset</button>
+      </div>
+    </div>
+  
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+    <table id="food-table">
+      <thead>
+        <tr>
+          <th>Food Item</th>
+          <th>Calories</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </body>
+  <script src="script.js"></script>
+</html>
